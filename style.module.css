@@ -100,13 +100,13 @@ nav {
           transition: 0.25s;
         }
 
-        /* &:hover ~ a {
+        &:hover ~ a {
           background-color: blue;
         }
 
         &:has(~ * ~ :hover) {
           background-color: red;
-        } */
+        }
       }
 
       &>hr {
@@ -120,6 +120,41 @@ nav {
 }
 
 main {
+  .pai {
+    width: 100%;
+    min-height: 80dvh;
+    background-color: orange;
+
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .filho {
+    width: 25rem;
+    height: 25rem;
+    background-color: aquamarine;
+    border: 2px solid blueviolet;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .img-container {
+    width: 23rem;
+    height: 23rem;
+  }
+
+  .img-container img{
+    width: 100%;
+    height: 100%;
+  }
+
 }
 
 
